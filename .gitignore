@@ -1,4 +1,17 @@
 .DS_Store
+<<<<<<< HEAD
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+=======
 node_modules/
 /dist/
 npm-debug.log*
@@ -7,6 +20,7 @@ yarn-error.log*
 /test/unit/coverage/
 /test/e2e/reports/
 selenium-debug.log
+>>>>>>> c144489b42e112a14c1d1940b640adfe4f2f0d1f
 
 # Editor directories and files
 .idea
@@ -15,3 +29,7 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+<<<<<<< HEAD
+*.sw?
+=======
+>>>>>>> c144489b42e112a14c1d1940b640adfe4f2f0d1f

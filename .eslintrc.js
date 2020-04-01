@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+module.exports = {
+  root: true,
+  env: {
+    node: true
+  },
+  'extends': [
+    'plugin:vue/essential',
+    'eslint:recommended',
+    '@vue/typescript/recommended'
+  ],
+  parserOptions: {
+    ecmaVersion: 2020
+  },
+  rules: {
+    '@typescript-eslint/no-explicit-any': 'off',
+    'no-empty-function': 0,
+    'no-empty-interface': 0,
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+=======
 // https://eslint.org/docs/user-guide/configuring
 
 module.exports = {
@@ -24,6 +44,7 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
+>>>>>>> c144489b42e112a14c1d1940b640adfe4f2f0d1f
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
 }
