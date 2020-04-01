@@ -1,15 +1,13 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex, { Store } from 'vuex'; // eslint-disable-line
+import { getStoreBuilder } from 'vuex-typex';
 
-Vue.use(Vuex)
+export interface RootState {
+  // Do something
 
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+}
+
+Vue.use(Vuex);
+const store: Store<RootState> = getStoreBuilder<RootState>().vuexStore();
+
+export default store;
